@@ -15,15 +15,15 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f8ff;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background: #007bff;
+            background: #004085;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
 
@@ -44,8 +44,42 @@
             font-size: 1.2rem;
         }
 
+        section#intro {
+            background-image: url('https://example.com/doctor-tech.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        section#intro h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        section#intro p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        .cta {
+            background: #007bff;
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta:hover {
+            background: #0056b3;
+        }
+
         section {
-            padding: 20px;
+            padding: 50px 20px;
             max-width: 1200px;
             margin: 20px auto;
             text-align: center;
@@ -54,6 +88,7 @@
         section h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
+            color: #004085;
         }
 
         .features {
@@ -66,33 +101,33 @@
             background: #fff;
             padding: 20px;
             margin: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             width: 300px;
             text-align: center;
-            border-radius: 8px;
+            border-radius: 10px;
+            border-top: 5px solid #007bff;
         }
 
         .feature-box h3 {
             margin-bottom: 15px;
-        }
-
-        .cta {
-            background: #28a745;
-            color: #fff;
-            padding: 15px 20px;
-            border: none;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 20px;
+            color: #007bff;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
-            background: #007bff;
+            padding: 20px;
+            background: #004085;
             color: #fff;
             margin-top: 30px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ccc;
         }
     </style>
 </head>
