@@ -65,4 +65,162 @@
 
         .cta {
             background: #007bff;
-      
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta:hover {
+            background: #0056b3;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #004085;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            border-top: 5px solid #007bff;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        /* Testimonials Section */
+        section#testimonials {
+            background-color: #e9f0fa;
+            padding: 50px 20px;
+        }
+
+        .testimonial-box {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #007bff;
+            border-radius: 10px;
+            text-align: left;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .testimonial-box p {
+            font-style: italic;
+        }
+
+        .testimonial-box h4 {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #004085;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #004085;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to CeraMD.AI</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>AI Copilot for Physicians</h2>
+        <p>Revolutionizing healthcare by reducing physician burnout with cutting-edge AI assistance.</p>
+        <button class="cta" onclick="alert('Thank you for your interest!')">Request a Demo</button>
+    </section>
+
+    <section id="features">
+        <h2>Our Key Features</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>AI-Powered Scribe</h3>
+                <p>Automated transcriptions and summaries to save doctors' time.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Clinical Decision Support</h3>
+                <p>Evidence-based treatment recommendations integrated with patient data.</p>
+            </div>
+            <div class="feature-box">
+                <h3>RAG-LLM Model</h3>
+                <p>Our proprietary RAG-LLM model has passed the USMLE exam with 91.4% accuracy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Physicians Are Saying</h2>
+        <div class="testimonial-box">
+            <p>"CeraMD.AI has transformed how I handle patient documentation. I can focus more on patient care rather than administrative tasks. It’s a game changer!"</p>
+            <h4>- Dr. Sarah Thompson, Family Physician</h4>
+        </div>
+        <div class="testimonial-box">
+            <p>"The AI-powered decision support has been invaluable in helping me make more informed, evidence-based decisions. I feel more confident with every case I handle."</p>
+            <h4>- Dr. John Patel, Cardiologist</h4>
+        </div>
+        <div class="testimonial-box">
+            <p>"I never realized how much time I was spending on paperwork until CeraMD.AI took it off my plate. The AI scribe is incredibly accurate and reliable."</p>
+            <h4>- Dr. Emily Nguyen, Pediatrician</h4>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <p>Founded by ex-Microsoft and CMU-trained engineers, we are dedicated to transforming healthcare with AI.</p>
+    </section>
+
+    <footer id="contact">
+        <p>Contact us: <a href="mailto:info@ceramd.ai">info@ceramd.ai</a></p>
+        <p>&copy; 2024 CeraMD.AI. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
