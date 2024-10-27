@@ -15,16 +15,19 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background: #004085;
+            background: rgba(0, 64, 133, 0.9); /* Slightly transparent blue background */
             color: #fff;
             padding: 20px 0;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
 
         header h1 {
@@ -44,13 +47,32 @@
             font-size: 1.2rem;
         }
 
+        /* Hero Section with Background Image */
         section#intro {
-            background-image: url('https://example.com/doctor-tech.jpg');
+            background-image: url('https://example.com/futuristic-doctor-tech.jpg'); /* Replace with the actual image URL */
             background-size: cover;
             background-position: center;
+            position: relative;
             color: #fff;
-            padding: 100px 20px;
+            padding: 150px 20px;
             text-align: center;
+        }
+
+        /* Adding an overlay to the image for readability */
+        section#intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 64, 133, 0.6); /* Dark overlay for contrast */
+            z-index: 0;
+        }
+
+        section#intro h2, section#intro p, .cta {
+            position: relative;
+            z-index: 1;
         }
 
         section#intro h2 {
@@ -113,6 +135,34 @@
             color: #007bff;
         }
 
+        /* Testimonials Section */
+        section#testimonials {
+            background-color: #e9f0fa;
+            padding: 50px 20px;
+        }
+
+        .testimonial-box {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #007bff;
+            border-radius: 10px;
+            text-align: left;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .testimonial-box p {
+            font-style: italic;
+        }
+
+        .testimonial-box h4 {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #004085;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -137,6 +187,7 @@
         <h1>Welcome to CeraMD.AI</h1>
         <nav>
             <a href="#features">Features</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#team">Team</a>
             <a href="#contact">Contact Us</a>
         </nav>
@@ -166,6 +217,23 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Physicians Are Saying</h2>
+        <div class="testimonial-box">
+            <p>"CeraMD.AI has transformed how I handle patient documentation. I can focus more on patient care rather than administrative tasks. It’s a game changer!"</p>
+            <h4>- Dr. Sarah Thompson, Family Physician</h4>
+        </div>
+        <div class="testimonial-box">
+            <p>"The AI-powered decision support has been invaluable in helping me make more informed, evidence-based decisions. I feel more confident with every case I handle."</p>
+            <h4>- Dr. John Patel, Cardiologist</h4>
+        </div>
+        <div class="testimonial-box">
+            <p>"I never realized how much time I was spending on paperwork until CeraMD.AI took it off my plate. The AI scribe is incredibly accurate and reliable."</p>
+            <h4>- Dr. Emily Nguyen, Pediatrician</h4>
+        </div>
+    </section>
+
     <section id="team">
         <h2>Meet Our Team</h2>
         <p>Founded by ex-Microsoft and CMU-trained engineers, we are dedicated to transforming healthcare with AI.</p>
@@ -178,4 +246,3 @@
 </body>
 
 </html>
-
